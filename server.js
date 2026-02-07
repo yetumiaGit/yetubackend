@@ -189,3 +189,15 @@ app.delete('/supprimer/:id', async (req, res) => {
 const PORT = process.env.PORT || 4000
 app.listen(PORT, '0.0.0.0', () => console.log(`🚀 Yetumia API running on port ${PORT}`))
 
+
+const cors = require('cors');
+
+// Configuration CORS
+const corsOptions = {
+  origin: ['https://www.yetumia.com', 'https://yetumia.com'],
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
+
