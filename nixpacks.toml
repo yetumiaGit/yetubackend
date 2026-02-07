@@ -1,0 +1,8 @@
+[phases.setup]
+packages = ["nodejs", "npm"]
+
+[phases.build]
+command = "npm install"
+
+[phases.start]
+command = "npm start"
